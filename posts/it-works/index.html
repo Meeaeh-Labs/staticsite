@@ -204,8 +204,10 @@ docker run -d --restart always -p 80:80 \-e GIT_REPO_URL=&#34;https://github.co
     meeaehlabs/static-site:latest
 </code></pre><p>If you have a <strong>Private Repo</strong> you need to use the below command</p>
 <pre tabindex="0"><code>docker run -d --restart always -p 80:80 \
-    -e GIT_REPO_URL=&#34;https://yourgitusername:classicgittoken@github.com/example-user/example-repo.git&#34; \
+    -e GIT_REPO_URL=&#34;https://github.com/example-user/example-repo.git&#34; \
     -e GIT_BRANCH=&#34;main&#34; \
+    -e GIT_USERNAME=&#34;delete if not private&#34; \
+    -e GIT_TOKEN=&#34;delete if not needed&#34; \
     --name my-static-site \
     meeaehlabs/static-site:latest
 </code></pre>

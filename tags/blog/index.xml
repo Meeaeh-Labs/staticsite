@@ -34,8 +34,10 @@
     meeaehlabs/static-site:latest
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If you have a &lt;strong&gt;Private Repo&lt;/strong&gt; you need to use the below command&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;docker run -d --restart always -p 80:80 \
-    -e GIT_REPO_URL=&amp;#34;https://yourgitusername:classicgittoken@github.com/example-user/example-repo.git&amp;#34; \
+    -e GIT_REPO_URL=&amp;#34;https://github.com/example-user/example-repo.git&amp;#34; \
     -e GIT_BRANCH=&amp;#34;main&amp;#34; \
+    -e GIT_USERNAME=&amp;#34;delete if not private&amp;#34; \
+    -e GIT_TOKEN=&amp;#34;delete if not needed&amp;#34; \
     --name my-static-site \
     meeaehlabs/static-site:latest
 &lt;/code&gt;&lt;/pre&gt;</content>
